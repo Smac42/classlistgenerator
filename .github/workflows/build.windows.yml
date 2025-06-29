@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile --windowed class_list_generator.py
 
     - name: Upload EXE artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: classlistgenerator-exe
         path: dist/class_list_generator.exe
